@@ -86,6 +86,8 @@ As a user i want to be able to see a list of orders, each including a total, a c
 ## Design Requirments
 Feel free to use any design you want but the selection of candidates will lean towards the more creative designs if technical skill are matched.
 
+## Flutter Requirments
+App should work on both Android and IOS
 
 ## Areas of assessments
 - Usage of clean code
