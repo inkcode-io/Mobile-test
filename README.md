@@ -26,7 +26,7 @@ As a user i want to be able to see a list of orders, each including a total, a c
     <span class="pl-s">"data"</span>: <span class="pl-kos">[</span>
     <span class="pl-kos">{</span>
         <span class="pl-s">"id"</span>: <span class="pl-s">321</span><span class="pl-kos">,</span>
-        <span class="pl-s">"total"</span>: <span class="pl-s">15.0000</span><span class="pl-kos">,</span>
+        <span class="pl-s">"total"</span>: <span class="pl-s">15000.0</span><span class="pl-kos">,</span>
         <span class="pl-s">"created_at"</span>: <span class="pl-s">"2014-10-06T10:45:38-08:00"</span><span class="pl-kos">,</span>
         <span class="pl-s">"image"</span>: <span class="pl-s">"https://loremflickr.com/320/240/cat?lock=9953"</span><span class="pl-kos">,</span>
         <span class="pl-s">"currency"</span>: <span class="pl-s">"LBP"</span><span class="pl-kos">,</span>
@@ -89,7 +89,7 @@ Feel free to use any design you want but the selection of candidates will lean t
 ## Flutter Requirments
 App should work on both Android and IOS
 
-## Areas of assessments
+## Areas of assessment
 - Usage of clean code
 - Architecture
 - Code formatting
