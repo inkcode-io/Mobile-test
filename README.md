@@ -6,15 +6,20 @@ As a user i want to be able to see a list of orders, each including a total, a c
 ## API Specification
 <ul dir="auto">
     <li><strong>Protocol</strong> <code>HTTPS</code></li>
-    <li><strong>Hostname</strong> <code>mock-api-mobile.inkcode.io</code></li>
+    <li><strong>Hostname</strong> <code>https://62f4b229ac59075124c1e40b.mockapi.io</code></li>
     <li><strong>Method</strong> <code>GET</code></li>
-    <li><strong>Endpoint</strong> <code>/v2/orders</code></li>
+    <li><strong>Endpoint</strong> <code>/api/v1/orders</code></li>
     <li><strong>Query String Parameters</strong>
         <ul dir="auto">
             <li><code>page</code>
             <ul dir="auto">
-                <li>Description: Starting page.</li>
-                <li>Items per page: 15</li>
+                <li>Description: required page.</li>
+                <li>Data type: Integer.</li>
+            </ul>
+            </li>
+            <li><code>limit</code>
+            <ul dir="auto">
+                <li>Description: Limit of items per page set to 15.</li>
                 <li>Data type: Integer.</li>
             </ul>
             </li>
@@ -52,9 +57,6 @@ As a user i want to be able to see a list of orders, each including a total, a c
     <span class="pl-s">"code"</span>: <span class="pl-s">200</span><span class="pl-kos">,</span>
     <span class="pl-s">"message"</span>: <span class="pl-s">"success"</span><span class="pl-kos">,</span>
     <span class="pl-s">"paginate"</span>: <span class="pl-s">{</span><span class="pl-kos"></span>
-        <span class="pl-s">"current_page"</span>: <span class="pl-s">1</span><span class="pl-kos">,</span>
-        <span class="pl-s">"from"</span>: <span class="pl-s">1</span><span class="pl-kos">,</span>
-        <span class="pl-s">"to"</span>: <span class="pl-s">15</span><span class="pl-kos"></span>
         <span class="pl-s">"total"</span>: <span class="pl-s">47</span><span class="pl-kos"></span>
         <span class="pl-s">"per_page"</span>: <span class="pl-s">15</span><span class="pl-kos"></span>
     <span class="pl-kos">}</span>
@@ -66,10 +68,10 @@ As a user i want to be able to see a list of orders, each including a total, a c
 
 ## Usser Requirments
 - retrive a list of orders from the API
-- Display that list (order id + formatted date + total + favorite status)
+- Display that list (order id + formatted date + total with currency + favorite status)
 - show order details on a diffrent screen when the user clicks on an order (address on map, items and their prices, total)
 - in details screen show a toggle favorite button that adds the order to favorite list or remove it from it depending on it's status, if the user navigates back to orders screen show a favorite indicator (icon) next to the order if it's in favorite list
-- favorite status of each order should be presistent
+- favorite status of each order should be presistent (saved in local database in the app)
 
 ## Technical Requirments
 - Source code must be stored on your public Git repository (you can send us the Github link when you finish)
@@ -94,7 +96,8 @@ App should work on both Android and IOS
 - Architecture
 - Code formatting
 - Usage of dependency injection
-- code reusablity
+- Code reusablity
+- Time taken to pass the test
 
 ## Deadline
 - 3 Days
